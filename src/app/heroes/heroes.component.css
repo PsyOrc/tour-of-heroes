@@ -1,11 +1,12 @@
 /* HeroesComponent's private CSS styles */
 .selected {
-  background-color: #CFD8DC !important;
+  background-color: #607D8B !important;
   color: white;
 }
 .heroes {
   margin: 0 0 2em 0;
   display: flex;
+  flex: 0 auto;
   flex-direction: column;
   flex-shrink: inherit;
   list-style-type: none;
@@ -37,7 +38,9 @@
   position: relative;
 }
 .heroes .badge {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
@@ -50,6 +53,11 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
-.heroNames{
-    display: flex;
+.name {
+    position: relative;
+    top: 25%;
+    line-height: 1em;
+    position: relative;
+    height: 1.8em;
+
 }
